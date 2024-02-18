@@ -522,6 +522,7 @@ function changeIcon(){
 function initializePage() {
 
   document.body.classList.remove("fade-out");
+/*
 
   urlLang = getUrlLang(langValue)
   // console.log("urlLang: " + urlLang)
@@ -665,6 +666,7 @@ function initializePage() {
     colorClass[i].addEventListener("mouseenter", setBorder, false);
     colorClass[i].addEventListener("mouseleave", removeBorder, false);
   }
+  */
 }
 
 function colorClicked(colorId) {
