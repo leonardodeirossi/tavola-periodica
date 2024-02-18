@@ -1005,7 +1005,7 @@
 
       $(document).ready(function () {
         setTimeout(function () {
-          $("#navLogo").html('<img src="/app/images/logo/qvettelogo.png" onclick="location.reload();" style="height: 51px; filter: invert(1) saturate(0) brightness(2);">');
+          $("#navLogo").html('<img src="qvettelogo.png" onclick="location.reload();" style="height: 51px; filter: invert(1) saturate(0) brightness(2);">');
           $(".no-overflow:first").remove();
 
           var state = UrlParser.getUrlParameters()["state"];
@@ -1013,7 +1013,7 @@
             if (localStorage.getItem(btoa("qvette__temp_state")) != null) {
               state = localStorage.getItem(btoa("qvette__temp_state"));
             } else {
-              window.location.href = "/app/403.html";
+              window.location.href = "https://qvette.altervista.org/app/403.html";
               return;
             }
           }
@@ -1032,7 +1032,7 @@
               if (localStorage.getItem(btoa("qvette__temp_state")) != null) {
                 state = localStorage.getItem(btoa("qvette__temp_state"));
               } else {
-                window.location.href = "/app/403.html";
+                window.location.href = "https://qvette.altervista.org/app/403.html";
                 return;
               }
             }

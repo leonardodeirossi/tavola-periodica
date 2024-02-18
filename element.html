@@ -284,9 +284,9 @@
 
       $(document).ready(function () {
         setTimeout(function () {
-          $("#navLogo").html('<img src="/app/images/logo/qvettelogo.png" onclick="location.reload();" style="height: 51px; filter: invert(1) saturate(0) brightness(2);">');
+          $("#navLogo").html('<img src="qvettelogo.png" onclick="location.reload();" style="height: 51px; filter: invert(1) saturate(0) brightness(2);">');
           $(".no-overflow:first").remove();
-          
+
           var state = localStorage.getItem(btoa("qvette__temp_state"));
           if (state == undefined || state == null || state == "") {
             window.location.href = "/app/403.html";
