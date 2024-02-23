@@ -995,7 +995,7 @@
           let lang = getQueryVariable("lang") || "en";
           langValue = getIdLang(lang)
           setLangFile(langValue);
-          loadjs(["constants.min.js", "locales/locale.it.js"], {
+          loadjs(["src/js/constants.js", "locales/locale.it.js"], {
             success: function () {
               indexLoad();
             },

@@ -522,7 +522,6 @@ function changeIcon(){
 function initializePage() {
 
   document.body.classList.remove("fade-out");
-/*
 
   urlLang = getUrlLang(langValue)
   // console.log("urlLang: " + urlLang)
@@ -530,13 +529,7 @@ function initializePage() {
   id("languageSelectSetting").value = langValue;
   localStorage.setItem("langValue", langValue);
 
-  id("settingsLink").addEventListener("click", closeMenu, false);
-  id("themeList").addEventListener("click", changeIcon, false);
-
-  // Event listeners
-  window.addEventListener("resize", closeMenusOnResize, false);
-  toggle.addEventListener("click", toggleMenu, false);
-
+  
   defaultNewTheme = localStorage.getItem("defaultNewTheme");
 
   if (!defaultNewTheme) {
@@ -600,13 +593,7 @@ function initializePage() {
 
   colorClicked(defaultColor);
 
-  id("homeTitle").textContent = homeHeader;
-  id("modalSettings").textContent = settings;
-  id("language").textContent = language;
-  // id("sysLanguage").textContent = sysLanguage;
-  id("temperature").textContent = temperature;  
-  id("settingPeriodicTable").textContent = homeHeader
-
+  
   document.querySelector('label[for="tempcelsius"]').textContent = tempCelsius;
   document.querySelector('label[for="tempfahrenheit"]').textContent = tempFahrenheit;
   
@@ -617,36 +604,6 @@ function initializePage() {
   id("settingsAtmWtMain").textContent = labelAtmWtMain;
   id("tableStyle").textContent = style;
 
-  id("navLogo").href = "./" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("listLink").textContent = list;
-  id("listList").title = list;
-  id("listList").href = "list.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("compareLink").textContent = compare;
-  id("compareList").title = compare;
-  id("compareList").href = "compare.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("translateLink").textContent = translate;
-  id("translateList").title = translate;
-  id("translateList").href = "translation.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("settingsLink").textContent = settings;
-  id("settingsList").title = settings;
-  id("storeLink").textContent = store;
-  id("storeList").title = store;
-  id("storeList").href = "store.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("printableLink").textContent = printables;
-  id("printableList").title = printables;
-  id("printableList").href = "printables.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("themeLink").textContent = theme;
-  id("themeList").title = theme;
-  id("translate2Link").textContent = translate;
-  id("translationFooter").href = "translation.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("suggestionLink").textContent = suggestions;
-  id("aboutLink").textContent = about;
-  id("aboutFooter").href = "about.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("creditsLink").textContent = credits;
-  id("creditsFooter").href = "credits.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  id("privacyLink").textContent = privacy;
-  id("privacyFooter").href = "privacy-policy.html" + (urlLang === "en" ? "" : "?lang=" + urlLang)
-  
   var newSpan = cls("new")
   for (var i = 0; i < newSpan.length; i++)
   newSpan[i].textContent = newContent;
@@ -666,7 +623,6 @@ function initializePage() {
     colorClass[i].addEventListener("mouseenter", setBorder, false);
     colorClass[i].addEventListener("mouseleave", removeBorder, false);
   }
-  */
 }
 
 function colorClicked(colorId) {
